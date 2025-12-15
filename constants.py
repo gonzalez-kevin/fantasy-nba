@@ -10,9 +10,12 @@ team_info = ['TEAM_ID', 'TEAM_ABBREVIATION']
 # player info
 player_info = ['PLAYER_ID', 'PLAYER_NAME']
 
-#stats to include
+# stats to include
 included_stats = [
-    'GP', 'MIN', 'FGM', 'FGA', 'FG3M', 'FG3A', 'FG3_PCT',
-    'FTM', 'FTA', 'FT_PCT', 'REB', 'AST', 'TOV', 'STL',
+    'GP', 'MIN', 'FGM', 'FGA', 'FG3M', 'FG3A',
+    'FTM', 'FTA', 'REB', 'AST', 'TOV', 'STL',
     'BLK', 'PTS'
     ]
+
+# combine to use in player_averages file
+player_stats_cols = team_info + player_info + included_stats
